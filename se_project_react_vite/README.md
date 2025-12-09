@@ -15,12 +15,12 @@ A full-stack web application called, "WTWR". This application reads weather data
 
 **Tech Stack**
 
-. HTML
-. CSS
-. JavaScript
-. React
-. Vite
-. Weather API
+- HTML
+- CSS
+- JavaScript
+- React
+- Vite
+- Weather API
 
 **Figma**
 
@@ -30,4 +30,4 @@ A full-stack web application called, "WTWR". This application reads weather data
 
 This Webpage is deployed to Git-Hub Pages
 
-. [Deployment Link](git@github.com:teaganbell/se_project_react.git)
+- [Deployment Link](git@github.com:teaganbell/se_project_react.git)
