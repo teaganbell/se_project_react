@@ -1,0 +1,99 @@
+/* vendor/fonts.css
+
+Place font files (woff2/woff) in the same folder: ./vendor/fonts/
+Then import this CSS from your entry (e.g. src/main.jsx):
+
+  import './vendor/fonts.css';
+
+Edit the file paths below if you move fonts elsewhere.
+*/
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Thin.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Extralight.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Extralight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Light.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Medium.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Extrabold.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("./fonts/CabinetGrotesk-Black.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variable font fallback (if you want to use the variable file directly) */
+@font-face {
+  font-family: "Cabinet Grotesk Variable";
+  src: url("./fonts/CabinetGrotesk-Variable.woff2") format("woff2"),
+    url("./fonts/CabinetGrotesk-Variable.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example usage elsewhere in your CSS:
+
+body {
+  font-family: 'Cabinet Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*/

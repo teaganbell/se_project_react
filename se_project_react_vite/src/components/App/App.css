@@ -1,0 +1,15 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  font-family: "Cabinet Grotesk", sans-serif;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.page__content {
+  flex: 1 1 auto;
+  max-width: 1360px;
+  margin: 0 auto;
+}

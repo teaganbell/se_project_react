@@ -1,0 +1,2 @@
+# Ignore vendor normalize.css (managed upstream/third-party)
+src/vendor/normalize.css
