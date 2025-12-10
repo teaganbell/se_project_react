@@ -13,7 +13,7 @@ export const getWeather = ({ latitude, longitude }, APIkey) => {
 export const filterWeatherData = (data) => {
   const result = {};
   result.city = data.name;
-  result.temp = { F: data.main.temp };
+  result.temp = { F: Math.round(data.main.temp) };
   result.type = getWeatherType(result.temp.F);
   // Map OpenWeather 'main' values to our condition keywords
   const rawCondition = data.weather[0].main.toLowerCase();
