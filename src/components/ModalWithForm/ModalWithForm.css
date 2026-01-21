@@ -27,8 +27,14 @@
   right: 28px;
   background: none;
   border: none;
-  width: 16px;
-  height: 16px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__close-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 .modal__content {
@@ -57,12 +63,36 @@
   padding-left: 0px;
 }
 
+.modal__error {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
 .modal__radio-buttons {
   border: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+}
+
+.modal__fieldset_type_radio {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.modal__radio-button {
+  margin-right: 10px;
+}
+
+.modal__legend {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .modal__label {
@@ -87,4 +117,26 @@
   border-radius: 4px;
   background-color: #000000;
   color: #ffffff;
+}
+
+.modal__button {
+  margin-top: 25px;
+  gap: 8px;
+  display: flex;
+  width: 124px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal__button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }

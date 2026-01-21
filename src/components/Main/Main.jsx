@@ -1,35 +1,37 @@
-import WeatherCard from "../WeatherCard/WeatherCard";
-import ItemCard from "../ItemCard/ItemCard";
 import "./Main.css";
+import ItemCard from "../ItemCard/ItemCard";
+import WeatherCard from "../WeatherCard/WeatherCard";
+import { useContext } from "react";
+import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnitContext";
 
-function Main({ weatherData, handleCardClick, clothingItems }) {
+const Main = ({ weatherData, onCardClick, clothingItems }) => {
+  const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
+
   return (
-    <main>
-      {weatherData && weatherData.type ? (
-        <WeatherCard weatherData={weatherData} />
-      ) : null}
-      <section className="cards">
-        <p className="cards__text">
-          Today is {weatherData.temp.F} &deg; F / You may want to wear:
+    <main className="main">
+      <WeatherCard
+        weatherData={weatherData}
+        isCelsius={currentTemperatureUnit === "C"}
+      />
+      <section className="main__clothes">
+        <p className="main__description">
+          Today is {weatherData.temp[currentTemperatureUnit]}˚
+          {currentTemperatureUnit} / You may want to wear:
         </p>
-        <ul className="cards__list">
+        <ul className="main__items">
           {clothingItems
-            .filter((item) => {
-              return item.weather === weatherData.type;
-            })
-            .map((item) => {
-              return (
-                <ItemCard
-                  key={item._id}
-                  item={item}
-                  onCardClick={handleCardClick}
-                />
-              );
-            })}
+            .filter((card) => card.weather === weatherData.type)
+            .map((filteredCard) => (
+              <ItemCard
+                key={filteredCard._id}
+                item={filteredCard}
+                onCardClick={onCardClick}
+              />
+            ))}
         </ul>
       </section>
     </main>
   );
-}
+};
 
 export default Main;

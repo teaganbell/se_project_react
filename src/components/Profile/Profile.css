@@ -1,0 +1,13 @@
+.profile {
+  display: flex;
+  gap: 20px;
+}
+
+.profile > :first-child {
+  flex-shrink: 0;
+  width: 250px;
+}
+
+.profile > :last-child {
+  flex-grow: 1;
+}

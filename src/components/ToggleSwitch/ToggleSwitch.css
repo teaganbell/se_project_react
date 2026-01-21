@@ -1,0 +1,73 @@
+.toggle-switch {
+  width: 56px;
+  height: 28px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.toggle-switch_checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch_circle {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  z-index: 0;
+}
+
+.toggle-switch_text {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+}
+
+.toggle-switch_text_F {
+  left: 10px;
+  z-index: 1;
+}
+
+.toggle-switch_text_C {
+  right: 10px;
+  z-index: 1;
+}
+
+.toggle-switch_checkbox:checked ~ .toggle-switch_circle {
+  left: 28px;
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-switch__text_color_white {
+  color: white;
+}
+
+.toggle-switch:hover {
+  border-color: black;
+}
+
+.toggle-switch:hover .toggle-switch_text_C {
+  color: black;
+}
+
+.toggle-switch:hover .toggle-switch_checkbox:checked ~ .toggle-switch_text_F {
+  color: black;
+}
+
+.toggle-switch:hover .toggle-switch_checkbox:checked ~ .toggle-switch_text_C {
+  color: white;
+}

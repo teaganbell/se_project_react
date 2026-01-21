@@ -1,0 +1,29 @@
+.clothes-section {
+  flex-grow: 1;
+}
+
+.clothes-section__row {
+  display: flex;
+}
+
+.clothes-section__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 0;
+}
+
+.clothes-section__title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.clothes-section__button {
+  color: #00000099;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 0;
+  font-size: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+}

@@ -13,6 +13,11 @@ Currently, two official plugins are available:
 
 A full-stack web application called, "WTWR". This application reads weather data from a Weather API and then recommends suitable clothing options to the user based on that data. The project's objective is to create a frontend for the application using the fundamental principles of React.
 
+## Project Pitch Video
+
+Check out [this video](https://www.loom.com/share/3e8aae4cb14e4b2f89054489b096a45d), where I describe my
+project and some challenges I faced while building it.
+
 **Tech Stack**
 
 - HTML
