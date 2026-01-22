@@ -27,3 +27,15 @@
   padding-left: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 1300px) {
+  .clothes-section__items {
+    grid-template-columns: repeat(2, 1fr); /* medium screens: 2 columns */
+  }
+}
+
+@media (max-width: 967px) {
+  .clothes-section__items {
+    grid-template-columns: 1fr; /* small screens: 1 column */
+  }
+}

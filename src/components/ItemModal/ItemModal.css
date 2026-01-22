@@ -20,6 +20,7 @@
   padding: 0;
   background: transparent;
   max-width: 498px;
+  max-height: 610px;
 }
 
 .modal__image {
@@ -28,6 +29,9 @@
   border-radius: 16px 16px 0 0;
   display: block;
   margin: 0 auto;
+  width: 498px;
+  height: 498px;
+  object-fit: cover;
 }
 
 .modal__footer {
